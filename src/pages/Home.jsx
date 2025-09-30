@@ -6,11 +6,11 @@ export default function Home() {
     return (
         <section className="home">
             <div className="hero">
-                <h1>Tjenare</h1>
+                <h1>Välkommen! Jag skapar moderna och intuitiva webblösningar.</h1>
                 <br />
-                <p>Jag bygger användarvänliga webbgänssnitt med React och modern CSS</p>
+                <p>Jag bygger moderna och användarvänliga webbgränssnitt med React och CSS.</p>
                 <div className="hero-actions">
-                    <button onClick={() => nav("/Projects")} className="btn">Se mina projekt</button>
+                    <button onClick={() => nav("/Projects")}>Se mina projekt</button>
                 </div>
             </div>
         </section>
