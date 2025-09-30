@@ -10,7 +10,7 @@ export default function Home() {
                 <br />
                 <p>Jag bygger användarvänliga webbgänssnitt med React och modern CSS</p>
                 <div className="hero-actions">
-                    <button onClick={() => nav("/projects")} className="btn">Se mina projekt</button>
+                    <button onClick={() => nav("/Projects")} className="btn">Se mina projekt</button>
                 </div>
             </div>
         </section>
