@@ -1,5 +1,5 @@
 import React from "react";
-import { Navlink } from "react"
+import { NavLink } from "react-router-dom"
 
 export default function Header() {
     return (
@@ -7,9 +7,9 @@ export default function Header() {
           <div className="container-header-inner">
             <div className="brand">Timotheo</div>
             <nav className="nav">
-                <Navlink to="/" className={({isActive}) => isActive ? "active" : ""}>Hem</Navlink>
-                <Navlink to="/projects" className={({isActive}) => isActive ? "active" : ""}>Projekt</Navlink>
-                <Navlink to="/contact" className={({isActive}) => isActive ? "active" : ""}>Kontakt</Navlink>
+                <NavLink to="/" className={({isActive}) => isActive ? "active" : ""}>Hem</NavLink>
+                <NavLink to="/projects" className={({isActive}) => isActive ? "active" : ""}>Projekt</NavLink>
+                <NavLink to="/contact" className={({isActive}) => isActive ? "active" : ""}>Kontakt</NavLink>
             </nav>
           </div>
         </header>

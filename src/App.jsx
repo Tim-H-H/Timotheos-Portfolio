@@ -9,7 +9,7 @@ import Home from "./pages/Home";
 function App() {
     return (
         <div className="app">
-            {/* <Header /> */}
+            <Header />
             <main className="container">
                 <Routes>
                     <Route path="/" element={<Home/>} />
