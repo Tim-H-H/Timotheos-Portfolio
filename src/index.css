@@ -10,14 +10,26 @@ body {
   color: rgb(0, 0, 0);
 }
 
-h1, h2, h3, .brand {
+h1, h2, h3, .header-name {
   font-family: "Inter", "Helvetica Neue", sans-serif;
   font-weight: 700;
+  
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
+.layout-container {
+  display: grid;
+  /* TODO: Reverse the values */
+  grid-template-columns: 15rem 1fr 15rem;
+}
+
+
+.main-content {
+  grid-column: 2;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .site-header {
@@ -40,15 +52,16 @@ h1, h2, h3, .brand {
 }
 
 
-.brand a {
+.header-name a {
   text-decoration: none;
   font-size: 2rem;
+  font-family: "Inter", "sans-serif";
   font-weight: 700;
   color: black;
 }
 
-.brand a:hover {
-  color: #ddd;
+.header-name a:hover {
+  color: #2bd800;
   transition: ease 0.2s;
 }
 
@@ -67,10 +80,31 @@ h1, h2, h3, .brand {
 }
 
 .nav a:hover {
-  color: #ddd;
+  color: #2bd800;
 }
 
 .nav a.active {
   border-bottom: 2px solid white;
   padding-bottom: 2px;
 }
+
+@keyframes fadeIn {
+  from  {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.welcome-text {
+  font-size: 4rem;
+  animation: fadeIn 0.7s ease-out forwards;
+}
+
+.intro-text {
+  animation: fadeIn 0.7s ease-in forwards;
+}
+

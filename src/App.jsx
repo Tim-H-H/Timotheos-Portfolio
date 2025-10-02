@@ -10,12 +10,14 @@ function App() {
     return (
         <div className="app">
             <Header />
-            <main className="container">
+            <main className="layout-container">
+                <div className="main-content">
                 <Routes>
                     <Route path="/" element={<Home/>} />
                     {/* <Route path="/projects" element={<Projects/>} /> */}
                     {/* <Route path="/contact" element={<Contact/>} /> */}
                 </Routes>
+                </div>
             </main>
             {/* <Footer /> */}
         </div>
