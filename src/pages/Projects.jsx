@@ -42,7 +42,7 @@ return (
             Other Github Repos
         </h2>
         <div className="projects-grid">
-            {repos.slice(0, 6).map((repo) => (
+            {repos.slice(0, 8).map((repo) => (
                 <Projectcard
                     key={repo.id}
                     title={repo.name}
