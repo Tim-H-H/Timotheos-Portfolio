@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   padding-top: 80px; 
   font-weight: 500;
   margin: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 h1, h2, h3, .brand {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
   font-weight: 700;
 }
 
