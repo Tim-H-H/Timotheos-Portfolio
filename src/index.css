@@ -57,11 +57,13 @@ h1, h2, h3, .header-name {
   font-size: 2rem;
   font-weight: 700;
   color: black;
+  transition: color 0.2s ease;
+
 }
 
 .header-name a:hover {
   color: #2bd800;
-  transition: ease 0.2s;
+
 }
 
 .nav {
