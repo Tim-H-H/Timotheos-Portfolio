@@ -8,6 +8,13 @@ body {
   font-weight: 500;
   margin: 0;
   color: rgb(0, 0, 0);
+
+  /* background-image: url(assets/laptop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 150px 150px;
+  z-index: -1; */
 }
 
 h1, h2, h3, .header-name {
