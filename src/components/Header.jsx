@@ -5,7 +5,9 @@ export default function Header() {
     return (
         <header className="site-header">
           <div className="container-header-inner">
-            <div className="brand">Timotheo</div>
+            <div className="brand">
+            <NavLink to="/" className={({isActive}) => isActive ? "active" : ""}>Timotheo</NavLink>
+            </div> 
             <nav className="nav">
                 <NavLink to="/" className={({isActive}) => isActive ? "active" : ""}>Hem</NavLink>
                 <NavLink to="/projects" className={({isActive}) => isActive ? "active" : ""}>Projekt</NavLink>
