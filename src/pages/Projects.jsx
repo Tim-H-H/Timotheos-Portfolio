@@ -20,23 +20,11 @@ export default function Projects() {
 
     return (
         <section className="projects-container">
-            {/* <h2 className="projects-header"></h2> */}
-            {/* <div className="project-grid">
-                {curated.map((project, index) => (
-                    <Projectcard
-                        key={index}
-                        title={project.title}
-                        description={project.description}
-                        github={project.github}
-                    />
-                ))}
-            </div> */}
-
-            <h2 className="projects-header" style={{ marginTop: "3rem"}}>
+            <h2 className="projects-header" style={{ marginTop: "1rem"}}>
                 Projects
             </h2>
             <div className="projects-grid">
-                {repos.slice(0, 8).map((repo) => (
+                {repos.slice(0, 9).map((repo) => (
                     <Projectcard
                         key={repo.id}
                         title={repo.name}
@@ -46,5 +34,6 @@ export default function Projects() {
                 ))}
             </div>
         </section>
+
     )
 }
