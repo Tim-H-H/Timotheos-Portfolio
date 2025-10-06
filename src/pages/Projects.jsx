@@ -5,7 +5,6 @@ export default function Projects() {
 
     const [repos, setRepos] = useState([]);
 
-// TODO: Change clean to a better variable name
 
     useEffect(() => {
         fetch("https://api.github.com/users/Tim-H-H/repos")
