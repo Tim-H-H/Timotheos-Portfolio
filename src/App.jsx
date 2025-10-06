@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -19,7 +19,7 @@ function App() {
                 </Routes>
                 </div>
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }
