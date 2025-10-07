@@ -156,10 +156,6 @@ h1, h2, h3, .header-name {
   font-size: 1.5rem;
 }
 
-.portfolio-img {
-
-}
-
 .portfolio-img img {
   border-radius: 100%;
   height: auto;
@@ -189,10 +185,31 @@ h1, h2, h3, .header-name {
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  flex-direction: row;
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
+.linkedIn-icon img {
+  width: 125px;
+  height: auto;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.github-icon img {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.github-icon img:hover {
+  
+}
 
 .contact-info a {
   text-decoration: none;
