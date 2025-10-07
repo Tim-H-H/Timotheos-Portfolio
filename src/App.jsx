@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 
 function App() {
     return (
-        <div className="app">
+        <>
             <Header />
             <main className="layout-container">
                 <div className="main-content">
@@ -20,7 +20,7 @@ function App() {
                 </div>
             </main>
             <Footer />
-        </div>
+        </>
     );
 }
 
