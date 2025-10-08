@@ -2,6 +2,7 @@ import avatar from '../images/avatar.jpg';
 import avatar_cropped from '../images/avatar_cropped.jpg';
 import github from '../assets/github.svg';
 import linkedIn from '../assets/linkedIn.svg';
+import email from '../assets/email.svg'
 
 export default function Contact() {
     return (
@@ -18,11 +19,7 @@ export default function Contact() {
             <div className="contact-info">
                 {/* <p><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/timotheo-hector-08283a22a/" target="_blank" rel="noopener noreferrer">Here</a></p>
                 <p><strong>Github:</strong><a href="https://github.com/Tim-H-H" target="_blank" rel="noopener noreferrer">Here</a></p>*/}
-                 <p>
-                    <a href="mailto:timotheohh@outlook.com" className="email-button">
-                        Skicka e-post
-                    </a>
-                 </p>
+                <a href="mailto:timotheohh@outlook.com" className="email-button"><img src={email} alt="" /></a>
                 <a href="https://www.linkedin.com/in/timotheo-hector-08283a22a/" className="linkedIn-icon"><img src={linkedIn} alt="" /></a>
                 <a href="https://github.com/Tim-H-H" className="github-icon"><img src={github} alt="" /></a>
             </div>

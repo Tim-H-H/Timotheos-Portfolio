@@ -13,6 +13,7 @@ export default function Projects() {
             const result = data.filter(
                 (repo) => !repo.fork && repo.description
             );
+            console.log("Result: ", result)
             setRepos(result);
         });
     }, []);
