@@ -1,4 +1,3 @@
-import avatar from '../images/avatar.jpg';
 import avatar_cropped from '../images/avatar_cropped.jpg';
 import github from '../assets/github.svg';
 import linkedIn from '../assets/linkedIn.svg';
