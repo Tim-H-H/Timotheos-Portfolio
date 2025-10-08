@@ -207,13 +207,28 @@ h1, h2, h3, .header-name {
   display: block;
 }
 
-.github-icon img:hover {
-  
+.email-button {
+  display: inline-block;
+  background-color: #2bd800;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.email-button a {
+  color: white;
+}
+
+.email-button:hover {
+  background-color: #24b300;
+  transform: translateY(-2px);
 }
 
 .contact-info a {
   text-decoration: none;
-  color: #2bd800;
   font-weight: 600;
 }
 
@@ -295,5 +310,4 @@ h1, h2, h3, .header-name {
   text-align: center;
   height: 3rem;
   background: rgba(255, 255, 255, 0.05);
-  flex-shrink: 0;
  }

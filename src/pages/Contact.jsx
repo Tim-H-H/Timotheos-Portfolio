@@ -16,11 +16,13 @@ export default function Contact() {
                 Hej! Mitt namn är Timotheo och jag är en nyexaminerad webbutvecklare med fokus på moderna tekniker som React, Node.js, HTML5, CSS3 och JavaScript. Jag brinner för att bygga responsiva, användarvänliga och effektiva webblösningar och söker nu möjligheter där jag kan omsätta mina kunskaper i riktiga projekt.
             </p>
             <div className="contact-info">
-                
-                <p><strong>Email:</strong> timotheohh@outlook.com</p>
                 {/* <p><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/timotheo-hector-08283a22a/" target="_blank" rel="noopener noreferrer">Here</a></p>
                 <p><strong>Github:</strong><a href="https://github.com/Tim-H-H" target="_blank" rel="noopener noreferrer">Here</a></p>*/}
-                
+                 <p>
+                    <a href="mailto:timotheohh@outlook.com" className="email-button">
+                        Skicka e-post
+                    </a>
+                 </p>
                 <a href="https://www.linkedin.com/in/timotheo-hector-08283a22a/" className="linkedIn-icon"><img src={linkedIn} alt="" /></a>
                 <a href="https://github.com/Tim-H-H" className="github-icon"><img src={github} alt="" /></a>
             </div>
