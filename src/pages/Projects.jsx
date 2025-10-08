@@ -5,7 +5,6 @@ export default function Projects() {
 
     const [repos, setRepos] = useState([]);
 
-// TODO: Change clean to a better variable name
 
     useEffect(() => {
         fetch("https://api.github.com/users/Tim-H-H/repos")
@@ -14,6 +13,7 @@ export default function Projects() {
             const result = data.filter(
                 (repo) => !repo.fork && repo.description
             );
+            console.log("Result: ", result)
             setRepos(result);
         });
     }, []);

@@ -3,8 +3,6 @@ html, body {
   background-color: rgb(255, 243, 229);
   height: 100%;
   margin: 0;
-  display: flex;
-  flex-direction: column;
 
 }
 
@@ -14,7 +12,9 @@ body {
   font-weight: 500;
   margin: 0;
   color: rgb(0, 0, 0);
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
   /* display: grid;
   grid-template-rows: 1fr auto; */
 
@@ -34,16 +34,17 @@ h1, h2, h3, .header-name {
   
 }
 
-.layout-container {
-  display: grid;
-  /* TODO: Reverse the values */
-  grid-template-columns: 15rem 1fr 15rem;
-  min-height: calc(100dvh - 40px);
+#root {
+  flex: 1 0 auto;
 }
 
-main {
-  flex: 1;
+.layout-container {
+  display: grid;
+  grid-template-columns: 15rem 1fr 15rem;
+  min-height: 100%;
+  margin-bottom: -48px;
 }
+
 
 .main-content {
   grid-column: 2;
@@ -134,39 +135,101 @@ main {
 /* Contact page CSS */
 
 .contact-container {
-  max-width: 500px;
+  max-width: 100%;
   margin: 3rem;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 1rem;
   box-shadow: 0 4px rgba(255, 255, 255, 0.1);
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
   animation: fadeIn 0.8s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container p {
+  width: 75%;
+  margin: 0 auto;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.portfolio-img img {
+  border-radius: 100%;
+  height: auto;
+  width: 350px;
+  margin: 0 auto;
+  border: 5px solid black;
+}
+
+.portfolio-img img:hover {
+  border-color: 5px solid #2bd800;
+  animation: ease 0.8s;
+}
+
+.cover-letter-info {
   text-align: center;
 }
 
 .contact-header {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
+  
 }
 
 .contact-info {
+  width: 100%;
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.contact-info strong {
-  margin-right: 0.25rem;
-  font-weight: 700;
+.linkedIn-icon img {
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.github-icon img {
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* TODO: find a email icon for email, make it equally small, push all either left or right */
+
+.email-button img {
+  display: block;
+  width: 50px;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.email-button a {
+  color: white;
+}
+
+.email-button:hover {
+  transform: translateY(-2px);
+  transition: ease 0.2s;
+
 }
 
 .contact-info a {
   text-decoration: none;
-  color: #2bd800;
   font-weight: 600;
 }
 
@@ -248,5 +311,4 @@ main {
   text-align: center;
   height: 3rem;
   background: rgba(255, 255, 255, 0.05);
-
  }
