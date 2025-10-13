@@ -23,7 +23,7 @@ export default function Projects() {
     calculator: "En enkel kalkylator byggd med React.",
     clicker: "Ett klickspel för att öva på states i React.",
     "coin-flipper": "Ett myntkast-spel som visar slumpmässiga resultat.",
-    "dropdown-test": "En testapp för att skapa en dropdown-meny.",
+    "dropdown-test": "En test applikation för att skapa en dropdown-meny.",
     hangman_game: "Klassiska Hänga Gubbe byggd i React JavaScript.",
     "lorem-ipsum-generator" : "En generator som skriver mer lorem ipsum text med en knapp",
     "my-weather": "En väderapp som hämtar data från ett API.",
