@@ -1,13 +1,31 @@
 html, body {
   box-sizing: border-box;
+  background-color: rgb(255, 243, 229);
+  height: 100%;
+  margin: 0;
+
 }
 
 body {
   font-family: "Oswald", "Arial", sans-serif;
-  padding-top: 80px; 
+  padding-top: 80px;
   font-weight: 500;
   margin: 0;
   color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+  /* display: grid;
+  grid-template-rows: 1fr auto; */
+
+
+
+  /* background-image: url(assets/laptop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 150px 150px;
+  z-index: -1; */
 }
 
 h1, h2, h3, .header-name {
@@ -16,10 +34,15 @@ h1, h2, h3, .header-name {
   
 }
 
+#root {
+  flex: 1 0 auto;
+}
+
 .layout-container {
   display: grid;
-  /* TODO: Reverse the values */
   grid-template-columns: 15rem 1fr 15rem;
+  min-height: 100%;
+  margin-bottom: -48px;
 }
 
 
@@ -55,14 +78,15 @@ h1, h2, h3, .header-name {
 .header-name a {
   text-decoration: none;
   font-size: 2rem;
-  font-family: "Inter", "sans-serif";
   font-weight: 700;
   color: black;
+  transition: color 0.2s ease;
+
 }
 
 .header-name a:hover {
   color: #2bd800;
-  transition: ease 0.2s;
+  box-shadow: #cecece;
 }
 
 .nav {
@@ -84,8 +108,8 @@ h1, h2, h3, .header-name {
 }
 
 .nav a.active {
-  border-bottom: 2px solid white;
   padding-bottom: 2px;
+  color: #2bd800;
 }
 
 @keyframes fadeIn {
@@ -105,6 +129,253 @@ h1, h2, h3, .header-name {
 }
 
 .intro-text {
+  font-size: 8rem;
   animation: fadeIn 0.7s ease-in forwards;
 }
 
+/* Home Page CSS */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100dvh - 60px);
+  padding: 0 2rem;
+  background-color: rgb(255, 243, 229);
+  text-align: left;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.welcome-text {
+  font-size: 9rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.intro-text {
+  font-size: 7rem;
+  font-weight: 500;
+  color: #111;
+  font-family: "Oswald", sans-serif;
+  max-width: 700px;
+  line-height: 1.3;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.home p {
+  font-size: 3rem;
+  color: #333;
+  font-family: "Oswald", sans-serif;
+  max-width: 600px;
+  margin-top: 0.5rem;
+}
+
+.home button {
+  font-family: "Oswald", sans-serif;
+  background: #2bd800;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 2rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.home button:hover {
+  background: #24b300;
+  transform: translateY(-2px);
+}
+
+
+/* Contact page CSS */
+
+.contact-container {
+  max-width: 100%;
+  margin: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 4px rgba(255, 255, 255, 0.1);
+  gap: 1rem;
+  animation: fadeIn 0.8s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container p {
+  width: 75%;
+  margin: 0 auto;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.portfolio-img img {
+  border-radius: 100%;
+  height: auto;
+  width: 350px;
+  margin: 0 auto;
+  border: 5px solid black;
+}
+
+.portfolio-img img:hover {
+  border-color: 5px solid #2bd800;
+  animation: ease 0.8s;
+}
+
+.cover-letter-info {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.contact-header {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  
+}
+
+.contact-info {
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.linkedIn-icon img {
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.github-icon img {
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.email-button img {
+  display: block;
+  width: 50px;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.email-button a {
+  color: white;
+}
+
+.email-button:hover {
+  transform: translateY(-2px);
+  transition: ease 0.2s;
+
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Projects Page css */
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-header {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: fadeIn 0.7s ease forwards;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3 {
+  font-size: 2rem;
+  font-family: "Inter" sans-serif;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.project-card p {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  color: rgb(60, 60, 60);
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  display: inline-block;
+  text-decoration: none;
+  background: #2bd800;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.project-card a:hover {
+  background: #24b300;
+}
+
+ /* Footer CSS */
+
+ .footer-container {
+  padding: 1rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+ }
