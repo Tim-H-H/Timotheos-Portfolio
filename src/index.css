@@ -135,8 +135,6 @@ h1, h2, h3, .header-name {
 
 /* Home Page CSS */
 
-/* ===== HOME PAGE (Hero Style) ===== */
-
 .home {
   display: flex;
   justify-content: center;
@@ -151,12 +149,11 @@ h1, h2, h3, .header-name {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 1100px;
   width: 100%;
 }
 
 .welcome-text {
-  font-size: clamp(3rem, 8vw, 8rem);
+  font-size: 9rem;
   font-weight: 800;
   line-height: 1;
   color: #000;
@@ -165,7 +162,7 @@ h1, h2, h3, .header-name {
 }
 
 .intro-text {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: 7rem;
   font-weight: 500;
   color: #111;
   font-family: "Oswald", sans-serif;
@@ -175,7 +172,7 @@ h1, h2, h3, .header-name {
 }
 
 .home p {
-  font-size: 1.25rem;
+  font-size: 3rem;
   color: #333;
   font-family: "Oswald", sans-serif;
   max-width: 600px;
@@ -241,6 +238,7 @@ h1, h2, h3, .header-name {
 }
 
 .cover-letter-info {
+  font-size: 3.5rem;
   text-align: center;
 }
 
@@ -315,8 +313,8 @@ h1, h2, h3, .header-name {
   align-items: center;
 }
 
-.project-header {
-  font-size: 2rem;
+.projects-header {
+  font-size: 3rem;
   margin-bottom: 1.5rem;
   font-family: "Inter", sans-serif;
 }
@@ -342,14 +340,14 @@ h1, h2, h3, .header-name {
 }
 
 .project-card h3 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-family: "Inter" sans-serif;
   margin-bottom: 0.5rem;
   color: black;
 }
 
 .project-card p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: "Oswald", sans-serif;
   color: rgb(60, 60, 60);
   margin-bottom: 1rem;
