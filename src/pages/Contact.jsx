@@ -13,7 +13,7 @@ export default function Contact() {
             </div>
             <br />
             <p className="cover-letter-info">
-                Hej! Mitt namn är Timotheo och jag är en nyexaminerad webbutvecklare med fokus på moderna tekniker som React, Node.js, HTML5, CSS3 och JavaScript. Jag brinner för att bygga responsiva, användarvänliga och effektiva webblösningar och söker nu möjligheter där jag kan omsätta mina kunskaper i riktiga projekt.
+                Hej! Mitt namn är Timotheo och jag är en nyexaminerad webbutvecklare med fokus på moderna tekniker som React, Node.js, HTML5, CSS3 och JavaScript. Jag brinner för att bygga responsiva, användarvänliga och effektiva webblösningar och söker nu möjligheter där jag kan sätta mina kunskaper i riktiga projekt.
             </p>
             <div className="contact-info">
                 {/* <p><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/timotheo-hector-08283a22a/" target="_blank" rel="noopener noreferrer">Here</a></p>
