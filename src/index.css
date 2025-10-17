@@ -411,6 +411,7 @@ h1, h2, h3, .header-name {
   }
 
   .home-container {
+    
     grid-template-columns: 1fr;
     gap: 2rem;
 
@@ -443,6 +444,10 @@ h1, h2, h3, .header-name {
     font-size: 1.5rem;
   }
 
+  .projects-container {
+    padding-top: 1rem;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -472,7 +477,13 @@ h1, h2, h3, .header-name {
   }
 
   .laptop-img {
-    width: 200px;
+    display: none;
   }
+
+.footer-container {
+  height: 4rem;
+  font-size: 1rem;
+  padding-top: 2rem;
+}
 
  }
