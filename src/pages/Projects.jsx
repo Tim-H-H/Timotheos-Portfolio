@@ -25,10 +25,23 @@ export default function Projects() {
     "coin-flipper": "Ett myntkast-spel som visar slumpmässiga resultat.",
     "dropdown-test": "En test applikation för att skapa en dropdown-meny.",
     hangman_game: "Klassiska Hänga Gubbe byggd i React JavaScript.",
-    "lorem-ipsum-generator" : "En generator som skriver mer lorem ipsum text med en knapp",
+    "lorem-ipsum-generator": "En generator som skriver mer lorem ipsum text med en knapp",
     "my-weather": "En väderapp som hämtar data från ett API.",
     "on-off": "En app för att växla mellan ljus och mörkt tema.",
     "smooth-color-changer" : "En app för att växla mellan olika färger med en knapp"
+    }
+
+    const liveUrls = {
+    calculator: "#calculator-demo",
+    clicker: "#clicker-demo",
+    "coin-flipper": "#coin-flipper-demo",
+    "my-weather": "#my-weather-demo",
+    "dropdown-test": "#dropdown-test-demo",
+    hangman_game: "#hangman-game-demo",
+    "lorem-ipsum-generator": "#lorem-ipsum-generator-demo",
+    "on-off": "#on-off-demo",
+    "smooth-color-changer": "#smooth-color-changer-demo"
+
     }
 
     useEffect(() => {
@@ -52,12 +65,14 @@ export default function Projects() {
                 {repos.slice(0, 9).map((repo) => {
                     const swedishName = resultinSwedish[repo.name.toLowerCase()] || repo.name;
                     const swedishDescription = descriptioninSwedish[repo.name.toLowerCase()] || repo.description;
+                    const liveUrl = liveUrls[repo.name.toLowerCase()] || null;
                 return (
                     <Projectcard
                         key={repo.id}
                         title={swedishName}
                         description={swedishDescription}
                         github={repo.html_url}
+                        live={liveUrl}
                     />
                 )
             })}

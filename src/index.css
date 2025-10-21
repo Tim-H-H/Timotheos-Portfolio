@@ -379,7 +379,13 @@ h1, h2, h3, .header-name {
   margin-bottom: 1rem;
 }
 
-.project-card a {
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-buttons a {
   display: inline-block;
   text-decoration: none;
   background: #2bd800;
