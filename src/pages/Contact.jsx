@@ -1,4 +1,4 @@
-import avatar_cropped from '../images/avatar_cropped.jpg';
+import avatar_cropped from '../images/avatar_cropped.webp';
 import github from '../assets/github.svg';
 import linkedIn from '../assets/linkedIn.svg';
 import email from '../assets/email.svg'
