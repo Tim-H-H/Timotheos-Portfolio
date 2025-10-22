@@ -199,7 +199,7 @@ h1, h2, h3, .header-name {
   margin-top: 0.5rem;
 }
 
-.home button {
+/* .home button {
   font-family: "Oswald", sans-serif;
   background: #2bd800;
   color: white;
@@ -212,7 +212,7 @@ h1, h2, h3, .header-name {
   align-self: flex-start;
   margin-top: 2rem;
   transition: background 0.2s ease, transform 0.2s ease;
-}
+} */
 
 .home button:hover {
   background: #24b300;
@@ -380,23 +380,39 @@ h1, h2, h3, .header-name {
 }
 
 .project-buttons {
-  display: flex;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.project-buttons a {
-  display: inline-block;
+.button {
   text-decoration: none;
   background: #2bd800;
   color: white;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  border: none;
   border-radius: 0.5rem;
   transition: background 0.2s ease;
 }
 
-.project-card a:hover {
+.button-home {
+  padding: 1rem 2rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button-live {
+  display: block;
+  width: 5rem;
+  padding: 0.5rem 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.button:hover {
   background: #24b300;
 }
 
@@ -411,6 +427,7 @@ h1, h2, h3, .header-name {
   height: 3rem;
   background: rgba(255, 255, 255, 0.05);
  }
+
 
 /* Mobile Web Design */
 

@@ -17,8 +17,8 @@ export default function Home() {
             Jag bygger moderna och användarvänliga webbgränssnitt med React och
             CSS.
           </p>
-          <div className="">
-            <button onClick={() => nav("/Projects")}>Se mina projekt</button>
+          <div>
+            <button className="button button-home" onClick={() => nav("/Projects")}>Se mina projekt</button>
           </div>
         </div>
         <div className="home-side-right">
