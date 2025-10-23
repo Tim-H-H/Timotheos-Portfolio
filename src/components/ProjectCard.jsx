@@ -7,7 +7,7 @@ export default function projectcard({ title, description, github, live}) {
                 <a href={live} target="_blank" rel="noopener noreferrer" className="button button-live">
                     Live Demo
                 </a>
-                <a href={github} target="_blank" rel="noopener noreferrer">
+                <a href={github} target="_blank" rel="noopener noreferrer" className="github-link">
                     Github
                 </a>
             </div>
